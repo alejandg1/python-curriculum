@@ -8,7 +8,7 @@ data['hora'] = '60'
 data['fecha'] = datetime.now().strftime('%d-%m-%Y')
 
 context = {'data': data}
-template_loader = jinja2.FileSystemLoader('D:/python--clase')
+template_loader = jinja2.FileSystemLoader('C:/Users/USUARIO/Music/Workspace/projects/curriculum-py/practica en clase')
 env_template = jinja2.Environment(loader=template_loader)
 
 html_template = 'index.html'
