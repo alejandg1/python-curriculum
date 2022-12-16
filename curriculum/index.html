@@ -4,106 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
-    <title>curriculum</title>
+    <link rel="stylesheet" href="index.css" />
+    <title>Curriculum</title>
   </head>
   <style>
-  body {
-    background-color: antiquewhite;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  .container{
-      width: 100%;
-      margin: 0px;
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, auto);
-  }
-  .container header{
+    h1 {
       text-align: center;
-      grid-column-start: 1;
-      grid-column-end: 3;
-  }
-  .container main{
-      grid-column: 1;
-      grid-row-start: 2;
-      grid-row-end: 3;
-;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-  }
-  .container section{
-      grid-column: 2;
-      grid-row: 3;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-  }
-  h1 {
-    color: #000000;
-    font-size: 40px;
-    font-weight: bold;
-  }
-  h2 {
-    color: #000000;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  p {
-    color: #000000;
-    font-size: 20px;
-    margin: 3px;
-  }
-  img{
-      border-radius: 50px;
+    }
+    body {
+      background-color: rgb(216, 208, 208);
+      font-size: 17px;
+    }
+    img {
+      border-radius: 15px;
+    }
+    main{
+      margin-top: 40px;
+      padding: 10px;
+    }
+    section {
+      margin-top: 20px;
       width: 50%;
-      margin-bottom: 50px;
-  }
-  aside{
-      border-bottom-left-radius: 100px;
-      border-bottom-right-radius: 100px;
-  }</style>
-
+      text-align: center;
+      background-color: antiquewhite;
+      border-radius: 30px;
+      padding: 10px;
+    }
+    p {
+      margin-bottom: 5px;
+    }
+  </style>
   <body>
-    <div class="container">
-      <header>
-        <h1><strong>Curriculum</strong></h1>
-      </header>
-        <img style="float:right " src="https://sga.unemi.edu.ec/media/fotos/2022/05/30/foto_2022530105758.jpg" alt="" /> 
-      <main>
-        <h3>Nombres: </h3>
-        <p>{{info.nombre}}</p>
-        <h3>Apellidos: </h3>     
-        <p>{{info.apellidos}}</p>
-        <h3>Cedula:</h3>
-        <p> {{info.cedula}}</p>
-        <h3>Sexo: </h3>
-        <p>{{info.sexo}}</p>
-        <h3>Fecha de nacimiento: </h3>
-        <p>{{info.nacimiento}}</p>
-        <h3>Correo: </h3>
-        <p>{{info.email}}</p>
-        <h3>Estado civil:  <h3>
-        <p>{{info.estado}}</p>
-        <h3>Domicilio:  </h3>
-        <p>{{info.domicilio}}</p>
-      </main>
-      <section>
-        <h2>formación academica</h2>
-        <h3>cursos:</h3>
-        <p>{{info.cursos}}</p>
-        <h3>esudios realizados</h3>
-        <h4><strong>escuela:</strong></h4>
-        <p>{{info.escuela}}</p>
-        <h4><strong>colegio:</strong></h4>
-        <p>{{info.colegio}}</p>
-        <h4><strong>universidad:</strong></h4>
-        <p>{{info.universidad}}</p>
-        <p><h3>firma:</h3>{{info.firmas}}</p>
-      </section>
-      <footer></footer>
-    </div>
+    <header><h1>Curriculum</h1></header>
+    
+    <aside>
+      <img
+        style="float: right"
+        src="https://sga.unemi.edu.ec/media/fotos/2022/05/30/foto_2022530105758.jpg"
+        alt=""
+      />
+      <p><strong>Nombres:</strong> &nbsp; {{info.nombres}}</p>
+      <p><strong>Apellidos: </strong>&nbsp; {{info.apellidos}}</p>
+    </aside>
+    <main>
+      <p><strong>cedula: </strong>&nbsp;{{info.cedula}}</p>
+      <p><strong>Sexo: </strong>&nbsp;{{info.sexo}}</p>
+      <p><strong>Fecha de nacimiento: </strong>&nbsp;{{info.nacimiento}}</p>
+      <p><strong>Correo: </strong>&nbsp;{{info.email}}</p>
+      <p><strong>Estado civil: </strong>&nbsp;{{info.estado}}</p>
+      <p><strong>Domicilio: </strong>&nbsp;{{info.domicilio}}</p>
+    </main>
+    <section>
+      <h2>Formación academica</h2>
+      <h3>cursos</h3>
+      <p>{{info.cursos}}</p>
+      <h3>estudios realizados</h3>
+      <p><strong> Escuela: </strong> {{info.escuela}}</p>
+      <p><strong> colegio: </strong>{{info.colegio}}</p>
+      <p><strong> universidad: </strong>{{info.universidad}}</p>
+      <p><strong> Firma: </strong> {{info.firmas}}</p>
+    </section>
   </body>
 </html>

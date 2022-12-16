@@ -4,7 +4,7 @@ from datetime import datetime
 
 info={}
 info['fecha']=datetime.now().strftime('%A-%B-%Y')
-info['nombre']= 'José Alejandro'
+info['nombres']= 'José Alejandro'
 info['apellidos']='Gómez Paredes'
 info['cedula']='091243423'
 info['sexo']='Masculino'
@@ -13,7 +13,7 @@ info['email']= 'jgomezp4@unemi.edu.ec'
 info['estado']= 'soltero'
 info['domicilio']= 'cdla. El Recreo 5ta etapa'
 info['cursos']= "CS50's Introduction to Computer Science"
-info['firmas']= 'Alejandro Gómez'
+info['firmas']= '_____________'
 info['colegio'] = 'Unidad educativa Durán '
 info['escuela'] = 'semillitas de esperanza'
 info['universidad']= 'Universidad estatal de Milagro'
