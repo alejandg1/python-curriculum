@@ -11,11 +11,12 @@ info['sexo']='M'
 info['nacimiento']='29/9/2003'
 info['email']= 'jgomezp4@unemi.edu.ec'
 info['estado']= 'soltero'
-info['domicilio']= ''
+info['domicilio']= 'cdla. El Recreo 5ta etapa'
 info['cursos']= "CS50's Introduction to Computer Science"
 info['firmas']= 'Alejandro Gómez'
-info['estudios'] = 'colegio: x, escuela: x, universidad: Universidad estatal de Milagro'
-
+info['colegio'] = 'Unidad educativa Durán '
+info['escuela'] = 'semillitas de esperanza'
+info['universidad']= 'Universidad estatal de Milagro'
 context = {'info':info}
 tempLoader = jinja2.FileSystemLoader('C:/Users/USUARIO/Music/Workspace/projects/curriculum-py/curriculum')
 envTemp = jinja2.Environment(loader=tempLoader)
